@@ -167,7 +167,7 @@ void FFT_Windowing(uint8_t windowType, uint8_t dir)
 	}
 }
 
-float FFT_MajorPeak(void)
+void FFT_MajorPeak(float* mag_out, float* freq_out, float magFact)
 {
 	float maxY = 0;
 	uint16_t IndexOfMaxY = 0;
@@ -185,7 +185,8 @@ float FFT_MajorPeak(void)
 	if(IndexOfMaxY==(_samples >> 1))
 		interpolatedX = ((IndexOfMaxY + delta)  * _samplingFrequency) / (_samples);
 
-	return(interpolatedX);
+	*mag_out = _vReal[IndexOfMaxY]/magFact;
+	*freq_out = interpolatedX;
 }
 
 uint8_t FFT_LibRevision(void)

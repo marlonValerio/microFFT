@@ -44,7 +44,7 @@ void 	FFT_Init(float *vReal, float *vImag, uint16_t samples, float samplingFrequ
 void 	FFT_Windowing(uint8_t windowType, uint8_t dir);
 void 	FFT_Compute(uint8_t dir);
 void 	FFT_ComplexToMagnitude(void);
-float 	FFT_MajorPeak(void);
+void 	FFT_MajorPeak(float* mag_out, float* freq_out, float magFact);
 
 uint8_t	FFT_LibRevision(void);
 
