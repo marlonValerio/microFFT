@@ -1,11 +1,11 @@
 microFFT
 ==========
 
-Fast Fourier Transform for microcontrollers
+Fast Fourier Transform for microcontrollers.
+
+This is a microcontroller C library for computing FFT. It was tested on ARM microcontrollers.
 
 This is a fork from https://github.com/kosme/arduinoFFT. That is an Arduino library written in C++ by Enrique Condes. I just adapted it for C projects and give it my own programming style :D.
-
-<del>This is a microcontroller C library for computing FFT.</del> It was tested on ARM microcontrollers.
 
 ### Installation
 
