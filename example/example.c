@@ -16,7 +16,7 @@ float vImag[FFT_samples];
 /* Simulated signal */
 // Sinusoidal Parameters and Variables
 #define sin_signals_number      5
-float sin_amplitude[sin_signals_number] = {0.1,     0.5,    0.7,    0.6,    0.2};
+float sin_amplitude[sin_signals_number] = {10,     5,    17,    13,    20};
 float sin_frequency[sin_signals_number] = {10,      20,     65,     40,     83};
 
 // Signal Parameters and Variable
